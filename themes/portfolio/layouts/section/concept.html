@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+
+<section class="concept">
+    <ul>
+        {{ range .Data.Pages }}
+            {{ .Title }} -
+            {{ .Summary }}
+        {{ end }}
+    </ul>
+</section>
+
+{{ partial "footer.html" . }}
+

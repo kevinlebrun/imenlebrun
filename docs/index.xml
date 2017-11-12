@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Imen&#39;s Portfolio</title>
+    <link>https://imenlebrun.fr/</link>
+    <description>Recent content on Imen&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <lastBuildDate>Sun, 12 Nov 2017 15:48:09 +0100</lastBuildDate>
+    
+	<atom:link href="https://imenlebrun.fr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Concept</title>
+      <link>https://imenlebrun.fr/concept/my-concept/</link>
+      <pubDate>Sun, 12 Nov 2017 15:48:09 +0100</pubDate>
+      
+      <guid>https://imenlebrun.fr/concept/my-concept/</guid>
+      <description>Some concept here&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

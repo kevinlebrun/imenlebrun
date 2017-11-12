@@ -1,0 +1,5 @@
+baseURL = "https://imenlebrun.fr/"
+languageCode = "fr-fr"
+title = "Imen's Portfolio"
+theme = "portfolio"
+publishDir = "docs"
