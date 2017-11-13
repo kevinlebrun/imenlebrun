@@ -6,18 +6,27 @@
     <description>Recent content on Imen&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <lastBuildDate>Sun, 12 Nov 2017 15:48:09 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 12 May 2012 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://imenlebrun.fr/concept/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My Concept</title>
-      <link>https://imenlebrun.fr/concept/my-concept/</link>
-      <pubDate>Sun, 12 Nov 2017 15:48:09 +0100</pubDate>
+      <title>Donnez Vie a Votre Audi</title>
+      <link>https://imenlebrun.fr/concept/donnez-vie-a-votre-audi/</link>
+      <pubDate>Sat, 12 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://imenlebrun.fr/concept/my-concept/</guid>
-      <description>Some concept here&amp;hellip;</description>
+      <guid>https://imenlebrun.fr/concept/donnez-vie-a-votre-audi/</guid>
+      <description>Le client souhaite un concept fort pour un site événementiel. Le thème de la campagne est X millimètres de technique. L’objectif est de proposer un concept qui sort de l’ordinaire.</description>
+    </item>
+    
+    <item>
+      <title>La Revolution Des Meubles</title>
+      <link>https://imenlebrun.fr/concept/la-revolution-des-meubles/</link>
+      <pubDate>Sat, 12 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://imenlebrun.fr/concept/la-revolution-des-meubles/</guid>
+      <description>Le client souhaite un concept fort pour son site e-commerce. L’objectif est de créer un concept autour du sigle OWNI (objet web non identifié)</description>
     </item>
     
   </channel>

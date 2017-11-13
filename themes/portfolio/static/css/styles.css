@@ -192,7 +192,7 @@ i.work__resume { background-image: url('/images/resume.png'); }
 .avatar {
     position: relative;
 
-    background: url("http://via.placeholder.com/190x250") no-repeat;
+    background: url("/images/avatar.png") no-repeat;
     width: 190px;
     height: 250px;
 
@@ -251,12 +251,12 @@ i.work__resume { background-image: url('/images/resume.png'); }
 .skills > ul > li:after {
     content: "";
     display: block;
-    padding-bottom: 50%;
+    padding-bottom: 100%;
 }
 
 @media screen and (max-width: 950px) {
     .skills > ul > li {
-        width: calc(25% - 20px);
+        width: calc(33% - 20px);
     }
 }
 
@@ -278,9 +278,17 @@ i.work__resume { background-image: url('/images/resume.png'); }
     padding: 0 5px;
 }
 
+.skills > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills > ul > li {
+    display: flex;
+}
+
 .skills i {
     width: 50%;
-    transform: translateY(50%);
 }
 .skills i:after {
     content: "";
@@ -346,6 +354,14 @@ i.skill__teamwork { background-image: url('/images/teamwork.png'); }
     margin: 50px 0 50px -10px;
     font-size: 1.3em;
     font-weight: 300;
+}
+
+figure {
+    text-align: center;
+}
+figure > img {
+    max-width: 420px;
+    max-height: 280px;
 }
 
 footer {

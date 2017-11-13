@@ -1,12 +1,15 @@
 {{ partial "header.html" . }}
 
 <section class="concept">
-    <ul>
-        {{ range .Data.Pages }}
-            {{ .Title }} -
-            {{ .Summary }}
-        {{ end }}
-    </ul>
+    {{ range .Data.Pages }}
+    <article>
+        <h3>{{ .Title }}</h3>
+        <figure>
+            <img src="/images/{{.File.TranslationBaseName}}.jpg" />
+        </figure>
+        {{ .Content }}
+    </article>
+    {{ end }}
 </section>
 
 {{ partial "footer.html" . }}

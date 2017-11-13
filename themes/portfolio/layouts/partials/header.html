@@ -21,7 +21,7 @@
             <nav>
                 <ul class="inline">
                     <li {{ if eq "" .Section }}class="selected"{{ end }}><a href="/">About me</a></li>
-                    <li {{ if eq "work" .Section }}class="selected"{{ end }}><a href="/work/">Work</a></li>
+                    <li {{ if (eq "work" .Section) | or (eq "writing" .Section) | or (eq "concept" .Section) }}class="selected"{{ end }}><a href="/work/">Work</a></li>
                     <li><a href="mailto:idjafri@gmail.com">Contact</a></li>
                 </ul>
             </nav>
