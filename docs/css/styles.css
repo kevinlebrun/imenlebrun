@@ -189,6 +189,61 @@ i.work__writing {
 i.work__concept { background-image: url('/images/concept.png'); }
 i.work__resume { background-image: url('/images/resume.png'); }
 
+article {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    border: 1px solid #e6e6e6;
+}
+@media screen and (max-width: 950px) {
+    article {
+        width: calc(100% / 2 - 20px);
+    }
+}
+article h3 {
+    color: #25afaf;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.3em;
+    margin: 15px;
+}
+article h3:after {
+    content: "";
+    margin-top: 1em;
+    width: 30%;
+    display: block;
+    border-bottom: 2px solid #25afaf;
+}
+article figure > img {
+    width: 100%;
+    height: 170px;
+}
+article p {
+    margin: 15px;
+    font-size: 0.8em;
+}
+article a.external {
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.writing, .concept {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.concept article {
+    width: calc(100% / 2 - 20px); /* only 2 items */
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+figure > img {
+    object-fit: cover;
+}
+
 .avatar {
     position: relative;
 
@@ -354,14 +409,6 @@ i.skill__teamwork { background-image: url('/images/teamwork.png'); }
     margin: 50px 0 50px -10px;
     font-size: 1.3em;
     font-weight: 300;
-}
-
-figure {
-    text-align: center;
-}
-figure > img {
-    max-width: 420px;
-    max-height: 280px;
 }
 
 footer {
