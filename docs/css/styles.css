@@ -224,6 +224,9 @@ article p {
 article a.external {
     font-size: 0.8em;
     text-transform: uppercase;
+    background-color: #25afaf;
+    color: white;
+    padding: 0 3px;
 }
 
 .writing, .concept {
