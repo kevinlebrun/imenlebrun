@@ -25,6 +25,28 @@
                     <li><a href="mailto:idjafri@gmail.com">Contact</a></li>
                 </ul>
             </nav>
+
+            <script>
+                var nav = document.querySelector('nav');
+                var stuck = false;
+                var offsetTop = nav.offsetTop;
+                var height = nav.getBoundingClientRect().height;
+
+                window.onscroll = function(e) {
+                  var distance = nav.offsetTop - window.pageYOffset;
+                  var offset = window.pageYOffset;
+                  if ((distance <= 0) && !stuck) {
+                    nav.parentElement.classList.add('fixed');
+                    var h = nav.getBoundingClientRect().height;
+                    nav.parentElement.style.paddingBottom = h+'px';
+                    stuck = true;
+                  } else if (stuck && (offset <= offsetTop)){
+                    nav.parentElement.classList.remove('fixed');
+                    nav.parentElement.style.paddingBottom = 0;
+                    stuck = false;
+                  }
+                }
+            </script>
         </header>
 
         <section class="hero band">
@@ -162,6 +184,116 @@
         <p>La poussée dentaire de bébé vous gâche vos nuits ? Qu&rsquo;à cela ne tienne, Mum2Be vous donne quelques astuces pour soulager votre bout’ chou.</p>
 
         <p><a class="external" target="_blank" href="https://medium.com/@idjafri/tous-aux-abris-bout-chou-fait-ses-dents-1cd9bcf43fa6#.jltf0zhce">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/fond-de-teint-effet-bonne-mine.jpg" />
+        </figure>
+        <h3>Fond de teint, effet bonne mine</h3>
+        <p>Rehaussez votre mine des beaux jours à l’aide du fond de teint parfait. Découvrez le fond de teint de vos rêves.</p>
+
+        <p><a class="external" target="_blank" href="http://www.unebellepeau.com/fond-teint/un-fond-de-teint-effet-bonne-mine.html">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/masque-a-la-banane.jpg" />
+        </figure>
+        <h3>Masque à la banane</h3>
+        <p>Vos fonds de tiroirs recèlent des ingrédients naturels aux vertus insoupçonnées. Découvrez des recettes de masque à n’en plus pouvoir.</p>
+
+        <p><a class="external" target="_blank" href="http://www.unebellepeau.com/masques/faire-un-masque-de-peau-a-la-banane.html">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/masque-a-largile.jpg" />
+        </figure>
+        <h3>Masque à l’argile</h3>
+        <p>Votre conjoint trouve vos soins de beauté un peu vieillots. Prouvez-lui le contraire et découvrez un soin de beauté extraordinaire.  </p>
+
+        <p><a class="external" target="_blank" href="http://www.unebellepeau.com/masques/masque-de-peau-a-base-dargile-verte.html">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/la-cire-orientale.jpg" />
+        </figure>
+        <h3>La cire orientale</h3>
+        <p>Avez-vous déjà entendu parler de la cire orientale ? Cette méthode vous procurera douceur et tranquillité pendant au moins 3 semaines. Venez découvrir les secrets de cette cire venue d’orient.</p>
+
+        <p><a class="external" target="_blank" href="http://www.unebellepeau.com/epilation/epilation-maison-a-la-cire-orientale.html">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/soins-apres-epilation.jpg" />
+        </figure>
+        <h3>Soins après épilation</h3>
+        <p>Une épilation ça laisse toujours des traces. Pour éviter de ressembler à un animal tacheté, il existe des soins qui réduisent les irritations de la peau. Pour en savoir plus ou plus d’infos.</p>
+
+        <p><a class="external" target="_blank" href="http://www.unebellepeau.com/epilation/soins-apres-lepilation.html">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/epilation-des-jambes.jpg" />
+        </figure>
+        <h3>Épilation des jambes</h3>
+        <p>Mettez en avant vos gambettes en les bichonnant comme il se doit. Pour cela, découvrez des méthodes d’épilations à couper le souffle.</p>
+
+        <p><a class="external" target="_blank" href="http://www.unebellepeau.com/epilation/comment-sepiler-les-jambes.html">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/la-typo-dans-tous-ses-etats.jpg" />
+        </figure>
+        <h3>La typo dans tous ses états</h3>
+        <p>Les évolutions du web bouleversent la typographie. Nombreuses sont les transformations qu’ont subi les offres dans ce domaine. Comment vous y retrouver ? Le point sur les bonnes pratiques avec l&rsquo;agence Ultranoir.</p>
+
+        <p><a class="external" target="_blank" href="http://www.ladn.eu/reflexion/tribune-dexpert/la-typo-dans-tous-ses-etats/">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/le-responsive-design-la-solution-miracle-du-site-3-en-1.jpg" />
+        </figure>
+        <h3>Le responsive design : La solution miracle du site 3 en 1 ?</h3>
+        <p>Si le terme de Responsive design vous est étranger, l’heure est venue de vous familiariser avec cette nouvelle technologie qui gagne de plus en plus de terrain auprès des concepteurs de sites internet et séduit de plus en plus d’annonceurs. Mais au fait, c’est quoi le Responsive design ?</p>
+
+        <p><a class="external" target="_blank" href="http://www.ultranoir.com/fr/#!/blog/web_3.0/responsive_design/">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/swag-it-up.jpg" />
+        </figure>
+        <h3>Swag it up !</h3>
+        <p>Mardi 23 et Mercredi 30 Mai 2012 a eu lieu à l’urban foot center d’Aubervilliers, le soccer web agencies game, plus communément appelé SWAG. Les agences se sont «affrontées» dans une atmosphère bon enfant.</p>
+
+        <p><a class="external" target="_blank" href="http://www.ultranoir.com/fr/#!/blog/evenements/swag_it_up/">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/les-world-monaco-music.jpg" />
+        </figure>
+        <h3>Les World Monaco Music</h3>
+        <p>Découvrez le monde de la musique classique en parcourant les fiches biographiques des musiciens.</p>
+
+        <p><a class="external" target="_blank" href="http://www.worldmonacomusic.com/les-vainqueurs/violin">Lire l'article</a></p>
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/au-pays-des-agrumes-meconnus.jpg" />
+        </figure>
+        <h3>Au pays des agrumes méconnus</h3>
+        <p>Au revoir monde sans couleur. Bonjour arc en ciel de saveurs. Entre main de bouddha, citron caviar et combawa, partez à la découverte de fruits qui regorgent de richesses.  </p>
+
+        <p><a class="external" target="_blank" href="http://www.lesucre.com/actualites/au-pays-des-agrumes-meconnus.html">Lire l'article</a></p>
     </article>
     
 </section>

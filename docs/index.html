@@ -26,6 +26,28 @@
                     <li><a href="mailto:idjafri@gmail.com">Contact</a></li>
                 </ul>
             </nav>
+
+            <script>
+                var nav = document.querySelector('nav');
+                var stuck = false;
+                var offsetTop = nav.offsetTop;
+                var height = nav.getBoundingClientRect().height;
+
+                window.onscroll = function(e) {
+                  var distance = nav.offsetTop - window.pageYOffset;
+                  var offset = window.pageYOffset;
+                  if ((distance <= 0) && !stuck) {
+                    nav.parentElement.classList.add('fixed');
+                    var h = nav.getBoundingClientRect().height;
+                    nav.parentElement.style.paddingBottom = h+'px';
+                    stuck = true;
+                  } else if (stuck && (offset <= offsetTop)){
+                    nav.parentElement.classList.remove('fixed');
+                    nav.parentElement.style.paddingBottom = 0;
+                    stuck = false;
+                  }
+                }
+            </script>
         </header>
 
         <section class="hero band">

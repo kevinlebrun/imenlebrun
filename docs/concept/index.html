@@ -25,6 +25,28 @@
                     <li><a href="mailto:idjafri@gmail.com">Contact</a></li>
                 </ul>
             </nav>
+
+            <script>
+                var nav = document.querySelector('nav');
+                var stuck = false;
+                var offsetTop = nav.offsetTop;
+                var height = nav.getBoundingClientRect().height;
+
+                window.onscroll = function(e) {
+                  var distance = nav.offsetTop - window.pageYOffset;
+                  var offset = window.pageYOffset;
+                  if ((distance <= 0) && !stuck) {
+                    nav.parentElement.classList.add('fixed');
+                    var h = nav.getBoundingClientRect().height;
+                    nav.parentElement.style.paddingBottom = h+'px';
+                    stuck = true;
+                  } else if (stuck && (offset <= offsetTop)){
+                    nav.parentElement.classList.remove('fixed');
+                    nav.parentElement.style.paddingBottom = 0;
+                    stuck = false;
+                  }
+                }
+            </script>
         </header>
 
         <section class="hero band">
@@ -33,6 +55,24 @@
 
 
 <section class="concept">
+    
+    <article>
+        <figure>
+            <img src="/images/quand-les-parents-se-font-des-films.jpg" />
+        </figure>
+        <h3>Quand les parents se font des films…</h3>
+        <p>Comment inciter de nouveaux fans à aimer la page Mum2Be ?</p>
+
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/diorsnow.jpg" />
+        </figure>
+        <h3>DiorSnow</h3>
+        <p>Proposer un storytelling mettant en avant les produits de la marque Dior.</p>
+
+    </article>
     
     <article>
         <figure>
@@ -49,6 +89,24 @@
         </figure>
         <h3>La Revolution Des Meubles</h3>
         <p>Le client souhaite un concept fort pour son site e-commerce. L’objectif est de créer un concept autour du sigle OWNI (objet web non identifié)</p>
+
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/jeu-concours-etes-vous-une-femme-jacqueline-riu.jpg" />
+        </figure>
+        <h3>Jeu-concours : Etes-vous une femme Jacqueline Riu ?</h3>
+        <p>Proposer un quiz qui serait en relation avec le webzine de la marque.</p>
+
+    </article>
+    
+    <article>
+        <figure>
+            <img src="/images/newsletter-etes-vous-une-femme-jacqueline-riu.jpg" />
+        </figure>
+        <h3>Newsletter : Etes-vous une femme Jacqueline Riu ?</h3>
+        <p>Augmenter le nombre de fans sur la page Facebook.</p>
 
     </article>
     

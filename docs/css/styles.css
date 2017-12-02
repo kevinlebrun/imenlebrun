@@ -78,6 +78,11 @@ section, header, footer {
     margin-right: 10%;
 }
 
+header {
+    margin-top: 30px; /* + h1 margin */
+    overflow: hidden;
+}
+
 .band {
     background-color: #25afaf;
     color: white;
@@ -113,10 +118,23 @@ h1 > .subtitle {
     font-size: 1.5rem;
 }
 
+.fixed nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
 nav:before {
     content: "";
     display: block;
     border-top: 1px solid #e6e6e6;
+}
+
+nav {
+    overflow: hidden;
 }
 
 nav > ul > li {
@@ -232,10 +250,6 @@ article a.external {
 .writing, .concept {
     display: flex;
     flex-wrap: wrap;
-}
-
-.concept article {
-    width: calc(100% / 2 - 20px); /* only 2 items */
 }
 
 figure {
